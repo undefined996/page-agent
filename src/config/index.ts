@@ -74,13 +74,6 @@ export interface AgentConfig {
 
 	/**
 	 * TODO: @unimplemented
-	 * hook when action causes a new page to be opened
-	 * @note PageAgent will try to detect new pages and decide if it's caused by an action. But not very reliable.
-	 */
-	onNewPageOpen?: (this: PageAgent, url: string) => Promise<void> | void
-
-	/**
-	 * TODO: @unimplemented
 	 * try to navigate to a new page instead of opening a new tab/window.
 	 * @note will unload the current page when a action tries to open a new page. so that things keep in the same tab/window.
 	 */

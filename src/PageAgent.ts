@@ -23,6 +23,7 @@ import { getEventBus } from './utils/bus'
 
 export type { PageAgentConfig }
 export { tool, type PageAgentTool } from './tools'
+export * from './utils/NavigationDetector'
 
 export interface AgentBrain {
 	// thinking?: string
